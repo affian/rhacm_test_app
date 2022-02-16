@@ -25,10 +25,7 @@ spec:
   clusterSelector:
     matchLabels:
       clusterID: 3deeaf3a-b827-46d3-ae83-8963a2393262
-status:
-  decisions:
-    - clusterName: dc01-power-ocp-01
-      clusterNamespace: dc01-power-ocp-01
+
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
@@ -38,7 +35,8 @@ metadata:
   labels:
     app: mongodb-app
   annotations:
-    apps.open-cluster-management.io/github-path: https://github.com/affian/rhacm_test_app/tree/main/mongodb_resources
+    apps.open-cluster-management.io/github-path: mongodb_resources
+    apps.open-cluster-management.io/github-branch: main
 spec:
   channel: mongodb/mongodb-app
   placement:
