@@ -1,9 +1,0 @@
----
-apiVersion: apps.open-cluster-management.io/v1
-kind: Channel
-metadata:
-  name: mongodb-app
-  namespace: mongodb
-spec:
-  type: Git
-  pathname: https://github.com/affian/rhacm_test_app.git
