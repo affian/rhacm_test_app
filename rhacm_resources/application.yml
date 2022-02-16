@@ -38,7 +38,7 @@ metadata:
   labels:
     app: mongodb-app
   annotations:
-    apps.open-cluster-management.io/github-path: mongodb_resources
+    apps.open-cluster-management.io/github-path: https://github.com/affian/rhacm_test_app/tree/main/mongodb_resources
 spec:
   channel: mongodb/mongodb-app
   placement:
