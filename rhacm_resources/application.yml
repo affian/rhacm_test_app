@@ -25,7 +25,6 @@ spec:
   clusterSelector:
     matchLabels:
       clusterID: 3deeaf3a-b827-46d3-ae83-8963a2393262
-
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Subscription
@@ -43,7 +42,6 @@ spec:
     placementRef:
       kind: PlacementRule
       name: dev-clusters
-  secondaryChannel: ''
 ---
 apiVersion: app.k8s.io/v1beta1
 kind: Application
