@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: mongodb
-          image: rhscl/mongodb-34-rhel7
+          image: mongodb:3.6.19-xenial
           ports:
-            - containerPort: 3306
+            containerPort: 27017
               name: db-port
           env:
             - name: MYSQL_ROOT_PASSWORD
