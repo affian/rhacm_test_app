@@ -36,7 +36,7 @@ metadata:
     app: mongodb-app
   annotations:
     apps.open-cluster-management.io/github-path: mongodb_resources
-    apps.open-cluster-management.io/github-branch: main
+    apps.open-cluster-management.io/git-branch: main
 spec:
   channel: mongodb/mongodb-app
   placement:
